@@ -1,3 +1,3 @@
-module github.com/AlexBrochu/my-logger2
+module github.com/AlexBrochu/golang-package-tuto
 
 go 1.19
