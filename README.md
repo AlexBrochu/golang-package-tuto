@@ -53,3 +53,4 @@ npm publish --access public # this will publish your package so it's available t
 
 Super usefull video
 https://brianmorrison.me/blog/publish-your-own-go-package
+https://go.dev/doc/modules/managing-dependencies#locating_packages
