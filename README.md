@@ -51,6 +51,19 @@ npm version [major-minor]
 npm publish --access public # this will publish your package so it's available to everyone
 ```
 
-Super usefull video
-https://brianmorrison.me/blog/publish-your-own-go-package
-https://go.dev/doc/modules/managing-dependencies#locating_packages
+# Generate proto.pb.go
+
+To generate the proto pb source, you need to have this dependency install [see](https://developers.google.com/protocol-buffers/docs/reference/go-generated#invocation)
+
+```
+go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+```
+
+```
+protoc -I. -Ivendors --go_out=vendors  lib/constant.proto
+```
+
+# Super useful video
+
+- https://brianmorrison.me/blog/publish-your-own-go-package
+- https://go.dev/doc/modules/managing-dependencies#locating_packages
